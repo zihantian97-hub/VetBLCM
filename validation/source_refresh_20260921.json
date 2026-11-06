@@ -1,0 +1,21 @@
+{
+  "verified_utc": "2026-09-20T16:41:24.976523+00:00",
+  "baseline_candidate_sha256": "4b4427f62af95d011569f3602cf203aa8264914c87a8c6b61d30b41ae5f7f3f7",
+  "baseline_files_checked": 288,
+  "changed_existing_files": [
+    "docs/BROWSER_QA_20260920.md",
+    "docs/METHOD_PROVENANCE.md",
+    "docs/QA_STATUS.md",
+    "docs/REFERENCES.md",
+    "docs/SOURCE_AUDIT_20260920.md",
+    "docs/source_manifest.json",
+    "docs/SOURCE_VERIFICATION.md",
+    "PROGRESS.md",
+    "reports/example_analysis/report.html"
+  ],
+  "all_existing_code_models_numeric_draws_and_figures_unchanged": true,
+  "report_body_outside_reference_block_unchanged": true,
+  "new_density_quadrature_cases": 12,
+  "simulation_refits": 0,
+  "article_redistributed": false
+}

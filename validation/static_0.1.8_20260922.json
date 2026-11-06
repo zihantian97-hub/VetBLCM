@@ -1,0 +1,131 @@
+{
+  "version": "0.1.8-candidate",
+  "date": "2026-09-22",
+  "scope": [
+    "advisory-first navigation",
+    "PowerShell/.NET Windows folder chooser"
+  ],
+  "r_runtime_executed": false,
+  "windows_gui_executed": false,
+  "static_checks": {
+    "r_lexical_balance": "PASS (46 .R files)",
+    "workflow_has_explicit_page_hard_blockers": true,
+    "max_unlocked_removed_from_server": true,
+    "next_disabled_only_by_page_hard_blockers": true,
+    "sidebar_forward_lock_removed": true,
+    "folder_chooser_primary": "PowerShell STA System.Windows.Forms.FolderBrowserDialog",
+    "folder_chooser_fallback": "utils::choose.dir",
+    "page1_manual_path_entry_retained": true,
+    "modified_current_files_absolute_path_scan": "PASS"
+  },
+  "frozen_calculation_files_compared": 17,
+  "all_frozen_calculation_files_unchanged": true,
+  "frozen_files": [
+    {
+      "path": "models/dependent_positive.jags",
+      "sha256_0_1_7": "6f3bfd818a3ee86b7016d3bb581974cccd72056a55377a98ca72311863e1199c",
+      "sha256_0_1_8": "6f3bfd818a3ee86b7016d3bb581974cccd72056a55377a98ca72311863e1199c",
+      "unchanged": true
+    },
+    {
+      "path": "models/dependent_signed.jags",
+      "sha256_0_1_7": "e23bca8ac9533387fb7effb73884318b4ef92f8f4c040d8ec9bdc9cd2c5f361b",
+      "sha256_0_1_8": "e23bca8ac9533387fb7effb73884318b4ef92f8f4c040d8ec9bdc9cd2c5f361b",
+      "unchanged": true
+    },
+    {
+      "path": "models/hw_independent.jags",
+      "sha256_0_1_7": "2083f585aa6c6ff18ce97b21831b370c54b6efff51544ce0552f0bb46e424938",
+      "sha256_0_1_8": "2083f585aa6c6ff18ce97b21831b370c54b6efff51544ce0552f0bb46e424938",
+      "unchanged": true
+    },
+    {
+      "path": "R/00_utilities.R",
+      "sha256_0_1_7": "508f14bef9812569901bb79d19302452f709fcfe3da0f379586e6919875c39b6",
+      "sha256_0_1_8": "508f14bef9812569901bb79d19302452f709fcfe3da0f379586e6919875c39b6",
+      "unchanged": true
+    },
+    {
+      "path": "R/01_data.R",
+      "sha256_0_1_7": "177eb0dc022ee7436d36740b6d6003aa5fa889458322381fcf6bf00b0637f195",
+      "sha256_0_1_8": "177eb0dc022ee7436d36740b6d6003aa5fa889458322381fcf6bf00b0637f195",
+      "unchanged": true
+    },
+    {
+      "path": "R/02_priors.R",
+      "sha256_0_1_7": "a60eeeea2e68459834d557e767f11473ae5531e9984e1acbee4fdc7f30bcad35",
+      "sha256_0_1_8": "a60eeeea2e68459834d557e767f11473ae5531e9984e1acbee4fdc7f30bcad35",
+      "unchanged": true
+    },
+    {
+      "path": "R/03_probability.R",
+      "sha256_0_1_7": "7d4fedb61b612dcdd3d8e0e58ef97d0c998a2c5e3cec76c22d4398eb0e3eb312",
+      "sha256_0_1_8": "7d4fedb61b612dcdd3d8e0e58ef97d0c998a2c5e3cec76c22d4398eb0e3eb312",
+      "unchanged": true
+    },
+    {
+      "path": "R/04_run_jags.R",
+      "sha256_0_1_7": "bb1e8fb274335f98bd5cadec1c78981cf4cf6d0ab638dc407096a530d8ea0c9e",
+      "sha256_0_1_8": "bb1e8fb274335f98bd5cadec1c78981cf4cf6d0ab638dc407096a530d8ea0c9e",
+      "unchanged": true
+    },
+    {
+      "path": "R/05_diagnostics.R",
+      "sha256_0_1_7": "5a554368170eea10e9ff5a206c4fbe6656730882422f47e63b3f7713edbaff6f",
+      "sha256_0_1_8": "5a554368170eea10e9ff5a206c4fbe6656730882422f47e63b3f7713edbaff6f",
+      "unchanged": true
+    },
+    {
+      "path": "R/06_sensitivity.R",
+      "sha256_0_1_7": "7b230d349ec4a58055abadd7766ec9f0ba2acd418b57e84b1eacb39af74e6f47",
+      "sha256_0_1_8": "7b230d349ec4a58055abadd7766ec9f0ba2acd418b57e84b1eacb39af74e6f47",
+      "unchanged": true
+    },
+    {
+      "path": "R/07_plots.R",
+      "sha256_0_1_7": "03f9475baddb1f5ed434dde32924ba7cccb68d4575330c49d05ca77b5166f667",
+      "sha256_0_1_8": "03f9475baddb1f5ed434dde32924ba7cccb68d4575330c49d05ca77b5166f667",
+      "unchanged": true
+    },
+    {
+      "path": "R/08_reporting.R",
+      "sha256_0_1_7": "19fb211fa65e5458f218d5a933281020658dede5cf6721dd9e869c935b7cca95",
+      "sha256_0_1_8": "19fb211fa65e5458f218d5a933281020658dede5cf6721dd9e869c935b7cca95",
+      "unchanged": true
+    },
+    {
+      "path": "R/09_workbook.R",
+      "sha256_0_1_7": "369048c1ea3e0110616f3e20da867b3de34434bfbd76f7a26a8f0c7082496cf9",
+      "sha256_0_1_8": "369048c1ea3e0110616f3e20da867b3de34434bfbd76f7a26a8f0c7082496cf9",
+      "unchanged": true
+    },
+    {
+      "path": "R/11_publication_outputs.R",
+      "sha256_0_1_7": "9d00daf8b942a03934c6306db0a2ffe496691c441dfbe8d068390987af41465b",
+      "sha256_0_1_8": "9d00daf8b942a03934c6306db0a2ffe496691c441dfbe8d068390987af41465b",
+      "unchanged": true
+    },
+    {
+      "path": "R/load.R",
+      "sha256_0_1_7": "796a0f0010b7ed8eddd67aa1c1e20a9aa74dcb44934797a3aff8f4c9de43d514",
+      "sha256_0_1_8": "796a0f0010b7ed8eddd67aa1c1e20a9aa74dcb44934797a3aff8f4c9de43d514",
+      "unchanged": true
+    },
+    {
+      "path": "reports/example_analysis/analysis.rds",
+      "sha256_0_1_7": "24ddca3b082c30510bb5da0464a41bb8441ba613f979b443ca050649ed566292",
+      "sha256_0_1_8": "24ddca3b082c30510bb5da0464a41bb8441ba613f979b443ca050649ed566292",
+      "unchanged": true
+    },
+    {
+      "path": "validation/browser_20260920/VetBLCM_analysis.rds",
+      "sha256_0_1_7": "d706ed1d8f726790e1d1c45ce1d94b4367fda0bd1326c1c12cf9c89b85b0128b",
+      "sha256_0_1_8": "d706ed1d8f726790e1d1c45ce1d94b4367fda0bd1326c1c12cf9c89b85b0128b",
+      "unchanged": true
+    }
+  ],
+  "limitations": [
+    "No R/JAGS executable in the build environment; R regression scripts were source-reviewed but not executed.",
+    "Windows FolderBrowserDialog must be confirmed on the target Windows desktop runtime."
+  ]
+}

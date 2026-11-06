@@ -1,0 +1,12 @@
+Package: VetBLCM
+Title: Local Bayesian Latent Class Diagnostic Evaluation
+Version: 1.0.0
+Authors@R: c(person("Zihan", "Tian", role = "aut"), person("Aizhen", "Guo", role = "aut"), person("Yingyu", "Chen", role = "aut"))
+Description: Auditable two-test multiple-population diagnostic evaluation with explicit prior dependence, data checks, MCMC diagnostics and reproducible bilingual reports.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.4.0)
+Imports: shiny, bslib, DT, rjags, coda, posterior, readxl, openxlsx, digest, jsonlite, ggplot2, bayesplot, htmltools, base64enc, zip
+Suggests: testthat, renv
+URL: https://github.com/zihantian97-hub/VetBLCM
+BugReports: https://github.com/zihantian97-hub/VetBLCM/issues

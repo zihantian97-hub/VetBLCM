@@ -1,0 +1,43 @@
+{
+  "application": "VetBLCM",
+  "version": "0.1.7",
+  "date": "2026-09-22",
+  "scope": "static build-time checks only; no R/JAGS runtime available in current environment",
+  "changes": [
+    "Removed Page-12 local historical-run scanning and automatic multi-analyte summary/forest plot",
+    "Added standardized single-analyte analysis_summary.csv alongside analysis_summary.json",
+    "Moved results-root selection to Page 1",
+    "Changed complete local-save layout to root/YYYY-MM-DD/run_HHMMSS_analyte_analysisID",
+    "Re-saving the same fit atomically refreshes the same run folder; different fit IDs remain separate"
+  ],
+  "static_checks": {
+    "r_source_lexical_delimiters": "passed",
+    "json_parse": "passed",
+    "removed_panel_feature_identifiers_in_active_R_code": "0 hits",
+    "absolute_C_Users_paths_in_text_artifacts": "0 hits",
+    "frozen_statistical_core_hashes_vs_0.1.6": "14/14 unchanged"
+  },
+  "frozen_core_scope": [
+    "models/hw_independent.jags",
+    "models/dependent_positive.jags",
+    "models/dependent_signed.jags",
+    "R/00_utilities.R",
+    "R/01_data.R",
+    "R/02_priors.R",
+    "R/03_probability.R",
+    "R/04_run_jags.R",
+    "R/05_diagnostics.R",
+    "R/06_sensitivity.R",
+    "R/07_plots.R",
+    "reports/example_analysis/analysis.rds",
+    "validation/dependent_fit.rds",
+    "validation/independent_fit.rds"
+  ],
+  "runtime_pending": [
+    "scripts/test_local_export.R",
+    "scripts/test_publication_outputs.R",
+    "existing Shiny/R/JAGS regression suite",
+    "Windows Page-1 folder chooser/open-root interaction"
+  ],
+  "scientific_core_statement": "JAGS likelihoods, prior resolution, probability code, JAGS fitting, MCMC diagnostics, sensitivity refitting and plotting code are unchanged relative to 0.1.6. This delta changes reporting/export layout and UI/server plumbing only."
+}

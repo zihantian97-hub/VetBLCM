@@ -1,0 +1,70 @@
+{
+  "verified_utc": "2026-09-20 11:43:59 UTC",
+  "analysis_id": "20260920T141846.380_73e946ad30",
+  "browser_downloads": ["model_used.jags", "posterior_summary.csv", "VetBLCM_analysis.rds", "VetBLCM_results.xlsx", "VetBLCM_20260920T141846.380_73e946ad30.html", "VetBLCM_20260920T141846.380_73e946ad30.zip", "density.png"],
+  "sample_rows": 6000,
+  "settings": {
+    "mode": "preview",
+    "chains": 4,
+    "adapt": 500,
+    "burnin": 1000,
+    "iterations": 2000,
+    "thin": 1,
+    "seed": 20260920
+  },
+  "model_matches": true,
+  "csv_matches_saved_posterior": true,
+  "main_draws_match_positive_comparison": true,
+  "alternative_comparator_concentration": 200,
+  "alternative_recorded_ESS_matches": true,
+  "fits": [
+    {
+      "Run": "independent",
+      "Model": "independent",
+      "Analysis_ID": "20260920T141841.056_bbd0612db4",
+      "Max_Rhat": 1.00232552246514,
+      "Min_bulk_ESS": 2551.38025589233,
+      "Min_tail_ESS": 3598.56327648611,
+      "Diagnostics_pass": true,
+      "Draw_SHA256": "0645f8fe2f74e0c77179fb4d3f0c0f2efa6b5418b5abd66fae440ce61b121453"
+    },
+    {
+      "Run": "positive",
+      "Model": "positive",
+      "Analysis_ID": "20260920T141846.380_73e946ad30",
+      "Max_Rhat": 1.02184418021871,
+      "Min_bulk_ESS": 201.314161107729,
+      "Min_tail_ESS": 421.777447706045,
+      "Diagnostics_pass": false,
+      "Draw_SHA256": "1e75c2eabcac579f3b0d211e6410e06b2928bc5c3569360b4eaa23f0b4eb7b85"
+    },
+    {
+      "Run": "Alternative",
+      "Model": "positive",
+      "Analysis_ID": "20260920T142825.622_4ea3ef45b9",
+      "Max_Rhat": 1.02458994073715,
+      "Min_bulk_ESS": 135.314490564918,
+      "Min_tail_ESS": 192.072164353889,
+      "Diagnostics_pass": false,
+      "Draw_SHA256": "1d31670cf4ecdc26bf4fe330cbd22a3d9c8beb113919d8e241aa503b49a5cc4f"
+    },
+    {
+      "Run": "Weak",
+      "Model": "positive",
+      "Analysis_ID": "20260920T142828.361_45e019e5c0",
+      "Max_Rhat": 1.37547976574749,
+      "Min_bulk_ESS": 9.02059010195924,
+      "Min_tail_ESS": 40.5090326357876,
+      "Diagnostics_pass": false,
+      "Draw_SHA256": "3d704e664791f5732165ef7ae1e7d71a578884f6117504523b7692475c3bb372"
+    }
+  ],
+  "classification": "Short browser workflow fits; not recovery/calibration evidence",
+  "original_recovery_and_pilot_rerun": false,
+  "excel_posterior_matches": true,
+  "html_bilingual_structure_and_warning": true,
+  "bundle_draws_match": true,
+  "bundle_entries": ["analysis.rds", "analysis_settings.json", "figures/", "figures/accuracy.pdf", "figures/accuracy.png", "figures/accuracy.svg", "figures/autocorrelation.pdf", "figures/autocorrelation.png", "figures/autocorrelation.svg", "figures/comparison.pdf", "figures/comparison.png", "figures/comparison.svg", "figures/correlation.pdf", "figures/correlation.png", "figures/correlation.svg", "figures/diagnostics_all_parameters.pdf", "figures/observed.pdf", "figures/observed.png", "figures/observed.svg", "figures/ppc.pdf", "figures/ppc.png", "figures/ppc.svg", "figures/prevalence.pdf", "figures/prevalence.png", "figures/prevalence.svg", "figures/prior.pdf", "figures/prior.png", "figures/prior.svg", "figures/sensitivity.pdf", "figures/sensitivity.png", "figures/sensitivity.svg", "figures/trace.pdf", "figures/trace.png", "figures/trace.svg", "independent/", "independent/model_used.jags", "independent/settings.json", "model_used.jags", "positive/", "positive/model_used.jags", "positive/settings.json", "posterior_summary.csv", "report.html", "scenario_1/", "scenario_1/model_used.jags", "scenario_1/settings.json", "scenario_2/", "scenario_2/model_used.jags", "scenario_2/settings.json", "sessionInfo.txt", "VetBLCM_results.xlsx"],
+  "density_png_dimensions": [900, 1620, 3],
+  "html_visual_acceptance": "pending; content checks do not establish visual correctness"
+}

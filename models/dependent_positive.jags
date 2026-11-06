@@ -1,0 +1,43 @@
+# 中文模型注释：D=潜在感染类，H=潜在非感染类；Se/Sp 为诊断敏感性/特异性。
+# 输入 Y[j,1:4] 为群体 j 的 11、10、01、00 四格计数，N[j] 为该群体纳入数。
+# 准确度与依赖参数在群体间共用，只有 Prev[j] 按群体变化；此假设必须有研究依据。
+# uD/uH 是可行协方差区间的位置参数，不是 Pearson 相关系数。
+# 两项检测、两个自由类内协方差一般不能仅凭似然识别；正确计算不等于消除了先验依赖。
+
+# Branscum et al. (2005) 3.3.3; positive feasible covariance parameterization.
+# This two-test model remains structurally non-identifiable from likelihood alone.
+model {
+  # 四个准确度依次为 Se1、Sp1、Se2、Sp2；T(lower,upper) 明确实施先验截断。
+  for (t in 1:4) {
+    accuracy[t] ~ dbeta(alpha[t], beta[t]) T(lower[t], upper[t])
+  }
+  Se1 <- accuracy[1]
+  Sp1 <- accuracy[2]
+  Se2 <- accuracy[3]
+  Sp2 <- accuracy[4]
+  uD ~ dbeta(alpha[J+5],beta[J+5]) T(lower[J+5],upper[J+5])
+  uH ~ dbeta(alpha[J+6],beta[J+6]) T(lower[J+6],upper[J+6])
+  # 非负协方差：上界来自四格非负约束，c=u*U，u 位于 [0,1]。
+  UD <- min(Se1*(1-Se2),(1-Se1)*Se2)
+  UH <- min((1-Sp1)*Sp2,Sp1*(1-Sp2))
+  CovD <- uD*UD
+  CovH <- uH*UH
+  # 感染类：T1/T2 阳性边际为 Se1/Se2。
+  qD[1] <- Se1*Se2+CovD
+  qD[2] <- Se1*(1-Se2)-CovD
+  qD[3] <- (1-Se1)*Se2-CovD
+  qD[4] <- (1-Se1)*(1-Se2)+CovD
+  # 非感染类：阳性边际为 1-Sp1/1-Sp2；不能把 Sp 直接当作阳性概率。
+  qH[1] <- (1-Sp1)*(1-Sp2)+CovH
+  qH[2] <- (1-Sp1)*Sp2-CovH
+  qH[3] <- Sp1*(1-Sp2)-CovH
+  qH[4] <- Sp1*Sp2+CovH
+  # 按群体患病率混合两个潜在类别，再用多项分布拟合四格计数。
+  for (j in 1:J) {
+    Prev[j] ~ dbeta(alpha[j+4],beta[j+4]) T(lower[j+4],upper[j+4])
+    for (k in 1:4) {
+      prob[j,k] <- Prev[j]*qD[k]+(1-Prev[j])*qH[k]
+    }
+    Y[j,1:4] ~ dmulti(prob[j,1:4],N[j])
+  }
+}

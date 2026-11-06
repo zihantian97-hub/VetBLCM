@@ -1,0 +1,13 @@
+testthat::test_that("page 10 supports direct scenario upload and warning-only diagnostic failure", {
+  root<-getOption("vetblcm.root",".")
+  layout<-paste(readLines(file.path(root,"modules","mod_layout.R"),warn=FALSE,encoding="UTF-8"),collapse="\n")
+  server<-paste(readLines(file.path(root,"modules","mod_server.R"),warn=FALSE,encoding="UTF-8"),collapse="\n")
+  sens<-paste(readLines(file.path(root,"R","06_sensitivity.R"),warn=FALSE,encoding="UTF-8"),collapse="\n")
+  testthat::expect_match(layout,'fileInput\\("scenario_upload"')
+  testthat::expect_match(layout,'add_uploaded_scenario')
+  testthat::expect_match(server,'scenario_upload_info<-shiny::reactive')
+  testthat::expect_match(server,'review_sensitivity_failed')
+  testthat::expect_match(server,'failed MCMC diagnostics|未通过MCMC诊断')
+  testthat::expect_match(sens,'Sensitivity_all_diagnostics_pass')
+  testthat::expect_match(sens,'Required')
+})

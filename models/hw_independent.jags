@@ -1,0 +1,36 @@
+# 中文模型注释：D=潜在感染类，H=潜在非感染类；Se/Sp 为诊断敏感性/特异性。
+# 输入 Y[j,1:4] 为群体 j 的 11、10、01、00 四格计数，N[j] 为该群体纳入数。
+# 准确度与依赖参数在群体间共用，只有 Prev[j] 按群体变化；此假设必须有研究依据。
+
+# Independent implementation of Branscum et al. (2005), section 3.2.
+# Fixed cell order: ++, +-, -+, --. No gold standard is assumed.
+model {
+  # 四个准确度依次为 Se1、Sp1、Se2、Sp2；T(lower,upper) 明确实施先验截断。
+  for (t in 1:4) {
+    accuracy[t] ~ dbeta(alpha[t], beta[t]) T(lower[t], upper[t])
+  }
+  Se1 <- accuracy[1]
+  Sp1 <- accuracy[2]
+  Se2 <- accuracy[3]
+  Sp2 <- accuracy[4]
+  CovD <- 0
+  CovH <- 0
+  # 感染类：T1/T2 阳性边际为 Se1/Se2。
+  qD[1] <- Se1*Se2
+  qD[2] <- Se1*(1-Se2)
+  qD[3] <- (1-Se1)*Se2
+  qD[4] <- (1-Se1)*(1-Se2)
+  # 非感染类：阳性边际为 1-Sp1/1-Sp2；不能把 Sp 直接当作阳性概率。
+  qH[1] <- (1-Sp1)*(1-Sp2)
+  qH[2] <- (1-Sp1)*Sp2
+  qH[3] <- Sp1*(1-Sp2)
+  qH[4] <- Sp1*Sp2
+  # 按群体患病率混合两个潜在类别，再用多项分布拟合四格计数。
+  for (j in 1:J) {
+    Prev[j] ~ dbeta(alpha[j+4], beta[j+4]) T(lower[j+4], upper[j+4])
+    for (k in 1:4) {
+      prob[j,k] <- Prev[j]*qD[k] + (1-Prev[j])*qH[k]
+    }
+    Y[j,1:4] ~ dmulti(prob[j,1:4], N[j])
+  }
+}

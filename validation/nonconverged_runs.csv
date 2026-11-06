@@ -1,0 +1,5 @@
+"Scenario","Replicate","Convergence","Error","Zero_cell"
+"independence",5,FALSE,NA,FALSE
+"independence",6,FALSE,NA,FALSE
+"weak_separation",11,FALSE,NA,FALSE
+"weak_separation",14,FALSE,NA,FALSE

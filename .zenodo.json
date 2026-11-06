@@ -1,0 +1,31 @@
+{
+  "title": "VetBLCM: Bayesian Latent Class Analysis for Veterinary Diagnostic Test Validation",
+  "description": "Local R/Shiny/JAGS software for Bayesian latent class evaluation of two diagnostic tests across multiple populations without a perfect gold standard. Version 1.0.0 archives the existing 0.1.10 statistical implementation with source code, bilingual instructions, simulated example inputs, dependency lock file and automated tests. Empirical study data and saved posterior draws are not included.",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Tian, Zihan"
+    },
+    {
+      "name": "Guo, Aizhen"
+    },
+    {
+      "name": "Chen, Yingyu"
+    }
+  ],
+  "keywords": [
+    "veterinary epidemiology",
+    "Bayesian latent class model",
+    "diagnostic accuracy",
+    "JAGS"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/zihantian97-hub/VetBLCM",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

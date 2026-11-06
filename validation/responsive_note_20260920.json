@@ -1,0 +1,28 @@
+{
+  "verified_utc": "2026-09-20T12:40:21.8332370Z",
+  "scope": "UI sensitivity note only",
+  "viewport": {
+    "width": 635,
+    "height": 850
+  },
+  "chinese": {
+    "parent_scroll_width_px": 383,
+    "visual_complete": true,
+    "text": "未达标情景仅保留供审查，不能作最终推断；数值达标不证明可识别性。",
+    "parent_client_width_px": 383,
+    "text_height_px": 44
+  },
+  "english": {
+    "parent_scroll_width_px": 383,
+    "visual_complete": true,
+    "text": "Failed runs are retained for audit, not final inference. Numerical targets do not establish identifiability.",
+    "parent_client_width_px": 383,
+    "text_height_px": 68
+  },
+  "browser_fit_rerun": false,
+  "export_plot_function_unchanged": true,
+  "temporary_viewport_reset": true,
+  "temporary_tab_closed": true,
+  "server_stopped": true,
+  "regression": "validation/app_state_responsive_20260920.log"
+}

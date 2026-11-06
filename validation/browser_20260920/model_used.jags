@@ -1,0 +1,32 @@
+# Branscum et al. (2005) 3.3.3; positive feasible covariance parameterization.
+# This two-test model remains structurally non-identifiable from likelihood alone.
+model {
+  for (t in 1:4) {
+    accuracy[t] ~ dbeta(alpha[t], beta[t]) T(lower[t], upper[t])
+  }
+  Se1 <- accuracy[1]
+  Sp1 <- accuracy[2]
+  Se2 <- accuracy[3]
+  Sp2 <- accuracy[4]
+  uD ~ dbeta(alpha[J+5],beta[J+5]) T(lower[J+5],upper[J+5])
+  uH ~ dbeta(alpha[J+6],beta[J+6]) T(lower[J+6],upper[J+6])
+  UD <- min(Se1*(1-Se2),(1-Se1)*Se2)
+  UH <- min((1-Sp1)*Sp2,Sp1*(1-Sp2))
+  CovD <- uD*UD
+  CovH <- uH*UH
+  qD[1] <- Se1*Se2+CovD
+  qD[2] <- Se1*(1-Se2)-CovD
+  qD[3] <- (1-Se1)*Se2-CovD
+  qD[4] <- (1-Se1)*(1-Se2)+CovD
+  qH[1] <- (1-Sp1)*(1-Sp2)+CovH
+  qH[2] <- (1-Sp1)*Sp2-CovH
+  qH[3] <- Sp1*(1-Sp2)-CovH
+  qH[4] <- Sp1*Sp2+CovH
+  for (j in 1:J) {
+    Prev[j] ~ dbeta(alpha[j+4],beta[j+4]) T(lower[j+4],upper[j+4])
+    for (k in 1:4) {
+      prob[j,k] <- Prev[j]*qD[k]+(1-Prev[j])*qH[k]
+    }
+    Y[j,1:4] ~ dmulti(prob[j,1:4],N[j])
+  }
+}

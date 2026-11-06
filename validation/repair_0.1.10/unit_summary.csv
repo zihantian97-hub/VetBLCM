@@ -1,0 +1,25 @@
+"file","context","test","nb","failed","skipped","error","warning","user","system","real","passed"
+"test-core.R","core","Beta mean/ESS and truncation represent actual prior",6,0,FALSE,FALSE,0,0.15,0.02,0.64,6
+"test-core.R","core","Full Bernoulli bounds preserve four cells across all margins",17,0,FALSE,FALSE,0,0.17,0.03,0.2,17
+"test-core.R","core","Data QC does not silently discard observations",9,0,FALSE,FALSE,0,0.11,0.00999999999999998,0.11,9
+"test-identification.R","identification","Distinct dependent parameters can yield exactly the same population tables",3,0,FALSE,FALSE,0,0,0.02,0.0200000000000005,3
+"test-local-export.R","local-export","Local export writes a self-contained run directory without exposing its root",10,0,FALSE,FALSE,1,17.58,2.12,30.01,9
+"test-local-export.R","local-export","Windows folder chooser prefers a PowerShell .NET dialog",3,0,FALSE,FALSE,0,0.0100000000000016,0,0.0200000000000031,3
+"test-publication-outputs.R","publication-outputs","posterior contrasts use paired posterior draws",3,0,FALSE,FALSE,0,0.0199999999999996,0,0.00999999999999801,3
+"test-publication-outputs.R","publication-outputs","sample flow never invents exclusions",2,0,FALSE,FALSE,0,0,0,0.0200000000000031,2
+"test-publication-outputs.R","publication-outputs","single-analyte publication summary is one standardized row",2,0,FALSE,FALSE,0,0.580000000000002,0.1,0.669999999999995,2
+"test-reporting-integrity.R","reporting-integrity","Unknown screening totals remain unknown in tables and bilingual figures",13,0,FALSE,FALSE,0,0.0399999999999991,0.0599999999999996,0.119999999999997,13
+"test-reporting-integrity.R","reporting-integrity","Inconsistent screening counts are rejected without silent correction",14,0,FALSE,FALSE,0,0.0799999999999983,0,0.0900000000000034,14
+"test-reporting-integrity.R","reporting-integrity","Prior documentation decisions agree across reporting checklists",36,0,FALSE,FALSE,0,0.710000000000001,0.11,0.829999999999998,36
+"test-reporting-integrity.R","reporting-integrity","Missing or invalid flow counts cannot pass final reporting review",12,0,FALSE,FALSE,0,0.149999999999999,0.0600000000000001,0.219999999999999,12
+"test-reporting-integrity.R","reporting-integrity","Unknown flow and missing prior sources survive Excel and HTML export honestly",6,0,FALSE,FALSE,0,1.1,0.5,1.78,6
+"test-reporting.R","reporting","Reports use frozen run settings and escape supplied content",5,0,FALSE,FALSE,0,0.299999999999997,0.0699999999999998,0.390000000000001,5
+"test-reporting.R","reporting","Saved MCMC output can be analysed without an already loaded engine",5,0,FALSE,FALSE,0,0.280000000000001,0.0600000000000001,0.359999999999999,5
+"test-reporting.R","reporting","Prior population matching prevents silently swapped prevalence priors",1,0,FALSE,FALSE,0,0.0100000000000016,0,0,1
+"test-reporting.R","reporting","Incomplete sensitivity or absent human review never passes final checks",4,0,FALSE,FALSE,0,3.36,0.28,3.72,4
+"test-sensitivity-upload.R","sensitivity-upload","page 10 supports direct scenario upload and warning-only diagnostic failure",7,0,FALSE,FALSE,0,0.25,0.02,0.259999999999998,7
+"test-status.R","status","Scientific blockers prevent a numerically converged result appearing final",5,0,FALSE,FALSE,0,0.210000000000001,0,0.199999999999996,5
+"test-status.R","status","Missing source evidence cannot be labelled as literature-derived",1,0,FALSE,FALSE,0,0.0299999999999976,0,0.0300000000000011,1
+"test-workbook.R","workbook","Strict-reader compatibility repair preserves worksheet contents",3,0,FALSE,FALSE,0,0.0399999999999991,0.16,0.210000000000001,3
+"test-workbook.R","workbook","Generated workbooks advertise their actual worksheet dimensions",3,0,FALSE,FALSE,0,0.0700000000000003,0.14,0.289999999999999,3
+"test-workflow-gating.R","workflow-gating","workflow navigation is advisory-first with explicit technical blockers",10,0,FALSE,FALSE,0,0.530000000000001,0,0.530000000000001,10

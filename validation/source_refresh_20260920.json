@@ -1,0 +1,20 @@
+{
+  "checked_utc": "2026-09-20T01:11:35.982941+00:00",
+  "scope": "Source documentation and frozen report reference block only",
+  "previous_candidate_sha256": "c2151c26999721b27e5a05facb9657e1c56bfd3cc5fcc7b8d6c32e35bcc530ac",
+  "changed_existing_files": [
+    "docs/METHOD_PROVENANCE.md",
+    "docs/QA_STATUS.md",
+    "docs/REFERENCES.md",
+    "docs/source_manifest.json",
+    "docs/SOURCE_VERIFICATION.md",
+    "PROGRESS.md",
+    "reports/example_analysis/report.html"
+  ],
+  "unchanged_existing_file_count": 255,
+  "all_code_models_numeric_outputs_and_figures_unchanged": true,
+  "report_body_outside_reference_block_unchanged": true,
+  "report_embedded_reference_text_matches_current_file": true,
+  "simulation_fits_rerun": false,
+  "browser_acceptance": "Separate; source refresh does not certify browser acceptance"
+}

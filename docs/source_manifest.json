@@ -1,0 +1,107 @@
+[
+  {
+    "file": "Dendukuri2001.pdf",
+    "url": "https://www.medicine.mcgill.ca/epidemiology/Joseph/courses/EPIB-683/Dendukuri2001.pdf",
+    "status": "PENDING_VERIFICATION",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "file": "Branscum2005.pdf",
+    "url": "https://www.barkerstats.com/PDFs/COVID/%24AllfilesMax/perm_branscum_pvm_2005_sensitivity_specificity_bayesian.pdf",
+    "final_url": "https://www.barkerstats.com/PDFs/COVID/%24AllfilesMax/perm_branscum_pvm_2005_sensitivity_specificity_bayesian.pdf",
+    "bytes": 194569,
+    "sha256": "445215e95130cf934863fead19ef1d9fb6b5feb57e6c2fb2e5bc02b70d23e180",
+    "status": "DOWNLOADED"
+  },
+  {
+    "file": "jags_user_manual.pdf",
+    "url": "https://webhomes.maths.ed.ac.uk/~swood34/TOI/jags_user_manual.pdf",
+    "final_url": "https://webhomes.maths.ed.ac.uk/~swood34/TOI/jags_user_manual.pdf",
+    "bytes": 429729,
+    "sha256": "d73a023dc87654e6ae56eb27cc6dba25097e00ddd2d8f7ca2639f27d55e581a3",
+    "status": "DOWNLOADED"
+  },
+  {
+    "file": "woah_1.1.6.json",
+    "url": "https://www.woah.org/wp-json/woah-sont/v1/back-office-api-call?route=/api/contents/navigation-chapter-preview/&query[is_rid]=true&query[RID]=268&query[language_id]=102&query[is_manual]=true&query[animal_type]=7&query[standard_type]=6",
+    "final_url": "https://www.woah.org/wp-json/woah-sont/v1/back-office-api-call?route=/api/contents/navigation-chapter-preview/&query[is_rid]=true&query[RID]=268&query[language_id]=102&query[is_manual]=true&query[animal_type]=7&query[standard_type]=6",
+    "bytes": 360805,
+    "sha256": "e48cc6ed6750ed07b90e6a12d15fc2bcd5e94e0fc55e35e6200d27b3a1ed10c2",
+    "status": "DOWNLOADED"
+  },
+  {
+    "file": "woah_2.2.3.json",
+    "url": "https://www.woah.org/wp-json/woah-sont/v1/back-office-api-call?route=/api/contents/navigation-chapter-preview/&query[is_rid]=true&query[RID]=282&query[language_id]=102&query[is_manual]=true&query[animal_type]=7&query[standard_type]=6",
+    "final_url": "https://www.woah.org/wp-json/woah-sont/v1/back-office-api-call?route=/api/contents/navigation-chapter-preview/&query[is_rid]=true&query[RID]=282&query[language_id]=102&query[is_manual]=true&query[animal_type]=7&query[standard_type]=6",
+    "bytes": 290174,
+    "sha256": "f7d66da3cd73bd5dfb112f5a83348e31323111858f845aefc8e9644f0a0597f9",
+    "status": "DOWNLOADED"
+  },
+  {
+    "file": "woah_2.2.5.json",
+    "url": "https://www.woah.org/wp-json/woah-sont/v1/back-office-api-call?route=/api/contents/navigation-chapter-preview/&query[is_rid]=true&query[RID]=284&query[language_id]=102&query[is_manual]=true&query[animal_type]=7&query[standard_type]=6",
+    "final_url": "https://www.woah.org/wp-json/woah-sont/v1/back-office-api-call?route=/api/contents/navigation-chapter-preview/&query[is_rid]=true&query[RID]=284&query[language_id]=102&query[is_manual]=true&query[animal_type]=7&query[standard_type]=6",
+    "bytes": 378147,
+    "sha256": "348782678aae1af4f0178c9e827c899d0697256a8b271fcc88dea6506d069eee",
+    "status": "DOWNLOADED"
+  },
+  {
+    "file": "woah_2.2.6.json",
+    "url": "https://www.woah.org/wp-json/woah-sont/v1/back-office-api-call?route=/api/contents/navigation-chapter-preview/&query[is_rid]=true&query[RID]=285&query[language_id]=102&query[is_manual]=true&query[animal_type]=7&query[standard_type]=6",
+    "final_url": "https://www.woah.org/wp-json/woah-sont/v1/back-office-api-call?route=/api/contents/navigation-chapter-preview/&query[is_rid]=true&query[RID]=285&query[language_id]=102&query[is_manual]=true&query[animal_type]=7&query[standard_type]=6",
+    "bytes": 131903,
+    "sha256": "f11bbe98ea2b9ed8ef84cbc9bb323218f0726be470328895ab51db7948950c0d",
+    "status": "DOWNLOADED"
+  },
+  {
+    "source_id": "dendukuri_joseph_2001",
+    "verification_date": "2026-09-20",
+    "url": "https://joseph.research.mcgill.ca/publications/Methodological/conddep_diag.pdf",
+    "doi": "10.1111/j.0006-341X.2001.00158.x",
+    "status": "FULL_TEXT_TEXT_INSPECTED",
+    "access_method": "Indexed web PDF text, 10 pages; no local article copy",
+    "checked_locations": [
+      "p.160 equations 1-2 and 5",
+      "pp.160-161 generalized beta description",
+      "pp.161-162 nonidentification",
+      "pp.163-164 sensitivity and discussion"
+    ],
+    "local_archive_status": "PENDING; direct HTTPS TLS authentication failed",
+    "equation_image_review": "PENDING; screenshot calls returned references without inspectable images",
+    "local_file": null,
+    "sha256": null,
+    "earlier_course_url_failure_retained": true,
+    "audit": "SOURCE_AUDIT_20260920.md"
+  },
+  {
+    "source_id": "toft_jorgensen_hojsgaard_2005",
+    "verification_date": "2026-09-20",
+    "url": "https://orbit.dtu.dk/en/publications/diagnosing-diagnostic-tests-evaluating-the-assumptions-underlying/",
+    "doi": "10.1016/j.prevetmed.2005.01.006",
+    "status": "METADATA_ABSTRACT_VERIFIED; FULL_TEXT_PENDING_VERIFICATION",
+    "local_file": null,
+    "sha256": null
+  },
+  {
+    "source_id": "dendukuri_joseph_2001",
+    "verification_date": "2026-09-21",
+    "retrieval_date": "2026-09-20",
+    "url": "https://joseph.research.mcgill.ca/publications/Methodological/conddep_diag.pdf",
+    "doi": "10.1111/j.0006-341X.2001.00158.x",
+    "status": "LOCAL_ARCHIVED; SELECTED_EQUATION_IMAGES_VERIFIED",
+    "local_file": "work\\dendukuri_joseph_2001_author.pdf",
+    "bytes": 1026048,
+    "sha256": "b1031169caf115ad7e2601db5233dfea70c7f215cae5cafd0c5a24899d73abff",
+    "tls_certificate_validation": true,
+    "equation_image_pages": [
+      160,
+      161,
+      166
+    ],
+    "random_effects_page_viewed_not_implemented": 167,
+    "redistributed_in_application": false,
+    "audit": "SOURCE_AUDIT_20260921.md",
+    "printed_kernel_normalization_distinction_recorded": true,
+    "previous_access_failures_retained": true
+  }
+]

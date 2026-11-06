@@ -1,0 +1,5 @@
+"","Model","Mode","Chains","Iterations","Seed","Rhat_max","ESS_min","Diagnostics_pass"
+"independent","independent","preview",4,2000,1919,1.00292974443416,2326.44768484618,TRUE
+"positive","positive","preview",4,2000,1919,1.02270857155878,226.840769971213,FALSE
+"Weak","positive","preview",4,2000,2919,1.26412128186421,11.5110481816148,FALSE
+"Alternative","positive","preview",4,2000,3919,1.01898195335821,110.298127878132,FALSE

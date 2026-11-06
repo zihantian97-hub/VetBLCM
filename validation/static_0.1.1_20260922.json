@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-22",
+  "candidate": "0.1.1",
+  "scope": "export/filesystem and workbook compatibility only; statistical core frozen",
+  "r_runtime_available_in_build_environment": false,
+  "jags_available_in_build_environment": false,
+  "checks": {
+    "frozen_statistical_core_hashes_match_0.1.0": true,
+    "frozen_files_checked": 14,
+    "r_source_lexical_and_delimiter_check": "pass",
+    "personal_absolute_path_scan": "pass",
+    "local_export_ui_server_wiring": "pass",
+    "packaged_xlsx_dimension_only_refresh": "pass",
+    "xlsx_files_refreshed": [
+      "examples/VetBLCM_input_template.xlsx",
+      "examples/VetBLCM_prior_template.xlsx",
+      "examples/example_aggregated.xlsx",
+      "examples/example_sample_level.xlsx",
+      "reports/example_analysis/VetBLCM_results.xlsx"
+    ],
+    "r_jags_runtime_regression": "pending; R/JAGS unavailable in build environment",
+    "final_source_lexical_rescan": "pass",
+    "frozen_statistical_core_rescan": "pass"
+  },
+  "added_files": [
+    "R/10_local_export.R",
+    "docs/CHANGES_0.1.1.md",
+    "scripts/test_local_export.R",
+    "tests/testthat/test-local-export.R",
+    "validation/static_0.1.1_20260922.json"
+  ],
+  "changed_files": [
+    "DESCRIPTION",
+    "PROGRESS.md",
+    "R/09_workbook.R",
+    "README.md",
+    "docs/QA_STATUS.md",
+    "docs/USER_GUIDE.md",
+    "examples/VetBLCM_input_template.xlsx",
+    "examples/VetBLCM_prior_template.xlsx",
+    "examples/example_aggregated.xlsx",
+    "examples/example_sample_level.xlsx",
+    "modules/mod_layout.R",
+    "modules/mod_server.R",
+    "reports/example_analysis/VetBLCM_results.xlsx",
+    "scripts/package_release.py",
+    "tests/testthat/test-workbook.R",
+    "validation/local_acceptance_20260921/local_acceptance.json"
+  ],
+  "removed_files": [],
+  "note": "Historical 0.1.0 R/JAGS acceptance evidence is retained for the unchanged statistical core. 0.1.1 must be runtime-regressed on the tested Windows environment before promotion."
+}

@@ -1,0 +1,13 @@
+{
+  "baseline_created_utc": "2026-09-20T11:48:09.202100+00:00",
+  "baseline_files_checked": 285,
+  "changed_existing_files": [
+    "docs/BROWSER_QA_20260920.md",
+    "docs/QA_STATUS.md",
+    "modules/mod_layout.R",
+    "modules/mod_server.R",
+    "PROGRESS.md"
+  ],
+  "all_other_existing_files_unchanged": true,
+  "new_posterior_fits": false
+}

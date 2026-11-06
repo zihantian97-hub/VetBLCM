@@ -1,0 +1,105 @@
+{
+  "version": "0.1.3-candidate",
+  "checked_utc": "2026-09-22T08:20:00Z",
+  "checks": {
+    "all_frozen_core_hashes_unchanged": true,
+    "r_lexical_balance_all_files": true,
+    "workflow_gate_ui_present": true,
+    "workflow_nav_ui_present": true,
+    "page_validation_present": true,
+    "locked_navigation_present": true,
+    "qc_manual_review_present": true,
+    "results_manual_review_present": true,
+    "agreement_manual_review_present": true,
+    "local_export_gate_present": true,
+    "workflow_regression_script_present": true
+  },
+  "bad_r_files": [],
+  "frozen_core": [
+    {
+      "path": "R/00_utilities.R",
+      "old": "508f14bef9812569901bb79d19302452f709fcfe3da0f379586e6919875c39b6",
+      "new": "508f14bef9812569901bb79d19302452f709fcfe3da0f379586e6919875c39b6",
+      "unchanged": true
+    },
+    {
+      "path": "R/01_data.R",
+      "old": "177eb0dc022ee7436d36740b6d6003aa5fa889458322381fcf6bf00b0637f195",
+      "new": "177eb0dc022ee7436d36740b6d6003aa5fa889458322381fcf6bf00b0637f195",
+      "unchanged": true
+    },
+    {
+      "path": "R/02_priors.R",
+      "old": "a60eeeea2e68459834d557e767f11473ae5531e9984e1acbee4fdc7f30bcad35",
+      "new": "a60eeeea2e68459834d557e767f11473ae5531e9984e1acbee4fdc7f30bcad35",
+      "unchanged": true
+    },
+    {
+      "path": "R/03_probability.R",
+      "old": "7d4fedb61b612dcdd3d8e0e58ef97d0c998a2c5e3cec76c22d4398eb0e3eb312",
+      "new": "7d4fedb61b612dcdd3d8e0e58ef97d0c998a2c5e3cec76c22d4398eb0e3eb312",
+      "unchanged": true
+    },
+    {
+      "path": "R/04_run_jags.R",
+      "old": "bb1e8fb274335f98bd5cadec1c78981cf4cf6d0ab638dc407096a530d8ea0c9e",
+      "new": "bb1e8fb274335f98bd5cadec1c78981cf4cf6d0ab638dc407096a530d8ea0c9e",
+      "unchanged": true
+    },
+    {
+      "path": "R/05_diagnostics.R",
+      "old": "5a554368170eea10e9ff5a206c4fbe6656730882422f47e63b3f7713edbaff6f",
+      "new": "5a554368170eea10e9ff5a206c4fbe6656730882422f47e63b3f7713edbaff6f",
+      "unchanged": true
+    },
+    {
+      "path": "R/06_sensitivity.R",
+      "old": "54f4b0cd9423912fe4a9267538022434992ab6c6008376701360352390861e31",
+      "new": "54f4b0cd9423912fe4a9267538022434992ab6c6008376701360352390861e31",
+      "unchanged": true
+    },
+    {
+      "path": "R/07_plots.R",
+      "old": "03f9475baddb1f5ed434dde32924ba7cccb68d4575330c49d05ca77b5166f667",
+      "new": "03f9475baddb1f5ed434dde32924ba7cccb68d4575330c49d05ca77b5166f667",
+      "unchanged": true
+    },
+    {
+      "path": "R/08_reporting.R",
+      "old": "d8191a0fd0c0e39ff5839739dc2b9063c9894031b4117e3857ec7c24d583dd8d",
+      "new": "d8191a0fd0c0e39ff5839739dc2b9063c9894031b4117e3857ec7c24d583dd8d",
+      "unchanged": true
+    },
+    {
+      "path": "models/hw_independent.jags",
+      "old": "2083f585aa6c6ff18ce97b21831b370c54b6efff51544ce0552f0bb46e424938",
+      "new": "2083f585aa6c6ff18ce97b21831b370c54b6efff51544ce0552f0bb46e424938",
+      "unchanged": true
+    },
+    {
+      "path": "models/dependent_positive.jags",
+      "old": "6f3bfd818a3ee86b7016d3bb581974cccd72056a55377a98ca72311863e1199c",
+      "new": "6f3bfd818a3ee86b7016d3bb581974cccd72056a55377a98ca72311863e1199c",
+      "unchanged": true
+    },
+    {
+      "path": "models/dependent_signed.jags",
+      "old": "e23bca8ac9533387fb7effb73884318b4ef92f8f4c040d8ec9bdc9cd2c5f361b",
+      "new": "e23bca8ac9533387fb7effb73884318b4ef92f8f4c040d8ec9bdc9cd2c5f361b",
+      "unchanged": true
+    },
+    {
+      "path": "reports/example_analysis/analysis.rds",
+      "old": "24ddca3b082c30510bb5da0464a41bb8441ba613f979b443ca050649ed566292",
+      "new": "24ddca3b082c30510bb5da0464a41bb8441ba613f979b443ca050649ed566292",
+      "unchanged": true
+    },
+    {
+      "path": "validation/dependent_fit.rds",
+      "old": "78dd223207a6470f10f5cd869b3daa8dc9ed230cc822ddd87d7d3f3e005a35a8",
+      "new": "78dd223207a6470f10f5cd869b3daa8dc9ed230cc822ddd87d7d3f3e005a35a8",
+      "unchanged": true
+    }
+  ],
+  "note": "Static/source verification only; Windows R/Shiny/JAGS interaction regression remains pending."
+}

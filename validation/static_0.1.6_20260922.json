@@ -1,0 +1,17 @@
+{
+  "application": "VetBLCM",
+  "version": "0.1.6",
+  "date": "2026-09-22",
+  "scope": "static build-time checks only; no R/JAGS runtime available in current environment",
+  "changes": [
+    "Page-10 direct Alternative prior upload/validation/preview/naming",
+    "Main-prior freeze check after fit",
+    "Sensitivity MCMC diagnostic failure downgraded to reviewed warning",
+    "Guided bounded-entry presets retained/tightened"
+  ],
+  "runtime_pending": [
+    "scripts/test_sensitivity_upload_gate.R",
+    "existing Shiny/R/JAGS regression suite"
+  ],
+  "scientific_core_statement": "JAGS models, R/01-05 numerical likelihood/prior/probability/JAGS/diagnostic logic and R/07 plots unchanged; R/06 checklist semantics and R/08 report-readiness semantics changed only."
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "path": "R/01_data.R",
+    "sha256": "177eb0dc022ee7436d36740b6d6003aa5fa889458322381fcf6bf00b0637f195",
+    "identical_to_019": true
+  },
+  {
+    "path": "R/02_priors.R",
+    "sha256": "a60eeeea2e68459834d557e767f11473ae5531e9984e1acbee4fdc7f30bcad35",
+    "identical_to_019": true
+  },
+  {
+    "path": "R/03_probability.R",
+    "sha256": "7d4fedb61b612dcdd3d8e0e58ef97d0c998a2c5e3cec76c22d4398eb0e3eb312",
+    "identical_to_019": true
+  },
+  {
+    "path": "R/04_run_jags.R",
+    "sha256": "bb1e8fb274335f98bd5cadec1c78981cf4cf6d0ab638dc407096a530d8ea0c9e",
+    "identical_to_019": true
+  },
+  {
+    "path": "R/05_diagnostics.R",
+    "sha256": "5a554368170eea10e9ff5a206c4fbe6656730882422f47e63b3f7713edbaff6f",
+    "identical_to_019": true
+  },
+  {
+    "path": "models/hw_independent.jags",
+    "sha256": "2083f585aa6c6ff18ce97b21831b370c54b6efff51544ce0552f0bb46e424938",
+    "identical_to_019": true
+  },
+  {
+    "path": "models/dependent_positive.jags",
+    "sha256": "6f3bfd818a3ee86b7016d3bb581974cccd72056a55377a98ca72311863e1199c",
+    "identical_to_019": true
+  },
+  {
+    "path": "models/dependent_signed.jags",
+    "sha256": "e23bca8ac9533387fb7effb73884318b4ef92f8f4c040d8ec9bdc9cd2c5f361b",
+    "identical_to_019": true
+  }
+]

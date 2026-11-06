@@ -1,0 +1,11 @@
+.Rhistory
+.RData
+.Rproj.user/
+.vetblcm/
+renv/library/
+renv/staging/
+__pycache__/
+reports/
+*.rds
+*.log
+*.zip

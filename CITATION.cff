@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite this release."
+type: software
+title: "VetBLCM: Bayesian Latent Class Analysis for Veterinary Diagnostic Test Validation"
+version: 1.0.0
+authors:
+  - family-names: Tian
+    given-names: Zihan
+  - family-names: Guo
+    given-names: Aizhen
+  - family-names: Chen
+    given-names: Yingyu
+repository-code: "https://github.com/zihantian97-hub/VetBLCM"
+license: MIT
+keywords:
+  - veterinary epidemiology
+  - Bayesian latent class model
+  - diagnostic accuracy
+  - imperfect reference standard
+  - JAGS

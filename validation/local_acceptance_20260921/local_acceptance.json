@@ -1,0 +1,56 @@
+{
+  "started_utc": "2026-09-21T08:30:12.690806+00:00",
+  "source_archive": "<redacted-local-workspace>/outputs/VetBLCM-0.1.0-candidate.zip",
+  "source_archive_sha256": "5c9ed8297866997826d5f5dad9606dc5be4379f09cafc2fc07b856e14ace33ed",
+  "extracted_copy": "<redacted-local-workspace>/work/local_acceptance_20260921_163012/VetBLCM",
+  "tests": [
+    {
+      "name": "unit",
+      "exit_code": 0,
+      "seconds": 10.785041,
+      "log": "<redacted-local-workspace>/work/local_acceptance_20260921_163012/unit.log"
+    },
+    {
+      "name": "test_launch_scope",
+      "exit_code": 0,
+      "seconds": 5.266364,
+      "log": "<redacted-local-workspace>/work/local_acceptance_20260921_163012/test_launch_scope.log"
+    },
+    {
+      "name": "test_upload_identifiers",
+      "exit_code": 0,
+      "seconds": 0.620957,
+      "log": "<redacted-local-workspace>/work/local_acceptance_20260921_163012/test_upload_identifiers.log"
+    },
+    {
+      "name": "test_upload_delivery_server",
+      "exit_code": 0,
+      "seconds": 3.536031,
+      "log": "<redacted-local-workspace>/work/local_acceptance_20260921_163012/test_upload_delivery_server.log"
+    },
+    {
+      "name": "test_prior_editor_sync",
+      "exit_code": 0,
+      "seconds": 3.396128,
+      "log": "<redacted-local-workspace>/work/local_acceptance_20260921_163012/test_prior_editor_sync.log"
+    },
+    {
+      "name": "test_app",
+      "exit_code": 0,
+      "seconds": 3.936507,
+      "log": "<redacted-local-workspace>/work/local_acceptance_20260921_163012/test_app.log"
+    },
+    {
+      "name": "test_project_downloads",
+      "exit_code": 0,
+      "seconds": 51.615615,
+      "log": "<redacted-local-workspace>/work/local_acceptance_20260921_163012/test_project_downloads.log"
+    }
+  ],
+  "scope": "Local parser/API/Shiny server/export tests from extracted source; not a fresh dependency installation or browser visual acceptance.",
+  "model_refits": 0,
+  "user_instruction": "本地测试即可",
+  "manifest_files_verified": 304,
+  "finished_utc": "2026-09-21T08:31:33.704923+00:00",
+  "all_passed": true
+}
