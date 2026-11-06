@@ -321,8 +321,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10840,
-      "sha256": "544343f559cedf0763a018b9da20636547cb09c17ce5dc33a17fb3e573928660"
+      "bytes": 10989,
+      "sha256": "e638b3f41adbd0a6ff35b05fd23c3851b15668dd9d5d07dfb2dd64d5eb263441"
     },
     {
       "path": "renv.lock",
