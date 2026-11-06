@@ -5,6 +5,11 @@
   "contains_empirical_study_data": false,
   "files": [
     {
+      "path": ".gitattributes",
+      "bytes": 87,
+      "sha256": "785502e18d77079edc5b2932583011378f305e39d2696fa5e8cfc0a60d99d38f"
+    },
+    {
       "path": ".gitignore",
       "bytes": 119,
       "sha256": "9d5a5b60d9f9c7b3ce9fe83d2035a092e6f538d80e961edd5d6311209aaa345f"
