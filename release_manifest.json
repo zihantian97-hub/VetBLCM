@@ -36,8 +36,8 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 582,
-      "sha256": "75e93868daf71cdf19bd8bfa414e14afbd5fd8b9c48235c487aec5ccea57dfa8"
+      "bytes": 639,
+      "sha256": "55a4416b07c18179090970880a1262b25e1a7df01e15308761205f2a8e9966e9"
     },
     {
       "path": "DESCRIPTION",
@@ -321,8 +321,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10989,
-      "sha256": "e638b3f41adbd0a6ff35b05fd23c3851b15668dd9d5d07dfb2dd64d5eb263441"
+      "bytes": 11347,
+      "sha256": "e57beb642ef0ab13dcfea00f795e4d40fd26a56174176d5accaacb05b183a46d"
     },
     {
       "path": "renv.lock",

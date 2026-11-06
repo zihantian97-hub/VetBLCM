@@ -1,5 +1,9 @@
 # VetBLCM
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24002146.svg)](https://doi.org/10.5281/zenodo.24002146)
+
+Archived release: [Version 1.0.0](https://github.com/zihantian97-hub/VetBLCM/releases/tag/v1.0.0) · [Zenodo record](https://zenodo.org/records/24002146). The DOI identifies the fixed release; the main branch may receive documentation updates.
+
 Bayesian Latent Class Analysis for Veterinary Diagnostic Test Validation
 
 本地 R + Shiny + JAGS 软件，支持中英文界面和可切换语言的 HTML 报告。用于无完美金标准情况下，两种检测在多个群体中的诊断评价。每个分析物分别估计，数据不会发送到云端。
